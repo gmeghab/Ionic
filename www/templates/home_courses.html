@@ -1,0 +1,39 @@
+<ion-view view-title="Ristorante con Fusion">
+  <ion-content>
+    <div class="card">
+        <div class="item item-divider">
+            Our Courses
+            <span class="badge badge-assertive">{{course.label}}</span>
+		</div>
+        <div class="item item-thumbnail-left item-text-wrap">
+            <img ng-src="{{baseURL+course.image}}" alt="pg_tn">
+            <h2>{{course.name}}
+             <span class="badge">{{course.category}}</span></h2>
+            <p>{{course.description}}</p>
+        </div>
+	  </div>
+	  <div class="card">
+          <div class="item item-divider">
+            This Month's Promotions
+            <span class="badge badge-assertive">{{promotion.label}}</span>
+          </div>
+          <div class="item item-thumbnail-left item-text-wrap">
+               <img ng-src="{{baseURL+promotion.image}}" alt="{{promotion.name}}">
+                <h2>{{promotion.name}}
+                 <span class="badge">{{promotion.price | currency}}</span></h2>
+                <p>{{promotion.description}}</p>
+          </div>
+      </div>
+      <div class="card">
+          <div class="item item-divider">
+            Meet our Course Specialists
+          </div>
+          <div class="item item-thumbnail-left item-text-wrap">
+               <img ng-src="{{baseURL+professor.image}}" alt="{{professor.name}}">
+                <h2>{{professor.name}}</h2>
+                <h4>{{professor.designation}}</h4>
+			  <p>{{professor.description}}</p>
+          </div>
+      </div>
+  </ion-content>
+</ion-view>

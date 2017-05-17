@@ -1,0 +1,25 @@
+<ion-view view-title="About Us">
+  <ion-content>
+    <div class="card">
+		<div class="item item-divider">
+            Our History
+        </div>
+          <div class="item item-body item-text-wrap">
+<small>Utilize diverse disciplines to enhance communication, research, business and technology skills in the workplace. Execute programming languages in the process of design and implementation while developing and maintaining software. Develop effective problem-management and decision-making skills. Demonstrate various networking media and connections to explain the features and capabilities of networking software. Demonstrate skill and knowledge in preparation for industry-recognized certification examinations.
+			  </small></div>
+      </div>
+	  
+	  <div class="list list-inset">
+		  <div class="item item-divider">
+            Corporate Faculty
+		  </div>
+    <div class ="item item-avatar item-text-wrap" ng-repeat="professor in professors"
+				  href="#/app.aboutus/{{professor.id}}">
+        <img ng-src="{{baseURL+professor.image}}">
+		<h2><b>{{professor.name}}</b></h2>
+		<h4><b>{{professor.designation}}</b></h4>
+        <p>{{professor.description}}</p>
+    </div>
+</div>
+  </ion-content>
+</ion-view>
